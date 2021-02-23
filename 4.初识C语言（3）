@@ -61,11 +61,39 @@ eg:
 
 8.关键字
 
+auto  break  case  char  const  continue  default  do  double  else  enum
+extern  float  for  goto  if  int  long  register  return  short  signed
+sizeof  static  struct  switch  typedef  union  unsigned  void  volatile  while
 
-
-
-
-
+int main()
+{
+    //register int a = 10;//建议把a定义成寄存器变量。
+    int a = 10;
+    a = -2;
+    //int 定义的变量是有符号的；
+    //signed int 等价于 int;
+    unsigned int num = 0;//unsigned 定义的是无符号数；即使num = -1; 也会忽略“-”
+    
+    return 0;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
