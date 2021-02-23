@@ -86,7 +86,7 @@ int main()
     
     
     
-8-2. static
+8-2. static（有3种用法）
 
 //static 修饰局部变量，使局部变量的生命周期变长；
 //如果没有static，当执行test函数时，a是一个局部变量，a++,a=2。
@@ -140,7 +140,40 @@ int main()
     printf("sum = %d\n", sum);
     return 0;
 }
-    
+
+
+8-3. define（140'15）
+
+//#define 定义标识符常亮
+//#define MAX 100
+//#define 可以定义宏（宏是带参数的）
+
+//函数的实现:
+int Max(int x, int y)
+{
+    if(x > y)
+        return x;
+    else
+        return y;
+}
+
+//宏的定义：
+#define MAX(X, Y) (X>Y ? X : Y)
+
+int main()
+{
+    //int a = MAX;
+    int a = 10;
+    int b = 20;
+    //函数的方式：
+    int max = MAX(a, b);
+    printf("max = %d\n", max);
+    //宏的方式：
+    max = MAX(a, b);
+    //max = (a>b ? a : b);
+    printf("max = %d\n", max);
+    return 0;
+}
     
     
     
