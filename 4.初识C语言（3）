@@ -74,11 +74,40 @@ int main()
     //signed int 等价于 int;
     unsigned int num = 0;//unsigned 定义的是无符号数；即使num = -1; 也会忽略“-”
     
+    //struct  —— 结构体关键字
+    //union   —— 联合体/共用体
+    //typedef  -  类型定义  -  类型重定义
+    typedef unsigned int  u_int;//typedef 将类型名unsigned int重新命名为u_int；
+    unsigned int num = 20;
+    u_int num2 = 20;      //num 与 num2类型是一样的。
+ 
     return 0;
 }
     
     
     
+8-2. static
+
+//static 修饰局部变量，使局部变量的生命周期变长；
+//如果没有static，当执行test函数时，a是一个局部变量，a++,a=2。
+//局部变量，当进入时，生命周期开始，当执行结束时，生命周期结束，还给系统，即a保持初始值。
+void test()
+{
+    static int a = 1;//当a加上static修饰时，a 是一个静态的局部变量
+    a++;
+    printf("a = %d\n", a);//a输出是2 3 4 5 6；如果没有static，a的输出是2 2 2 2 2；
+}
+
+int main()
+{
+    int i = 0;
+    while (i<5)
+    {
+        test();
+        i++;
+     }
+     return 0;
+}
     
     
     
