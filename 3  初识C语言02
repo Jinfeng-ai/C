@@ -1,3 +1,25 @@
 # C
 学习笔记
 
+1.函数：（自定义函数）
+int  Add(int  x,  int  y)
+{
+       int  z  =  x  +  y;
+       return   z;
+}   //声明函数
+
+int   main()
+{
+     int  num1  =  10;
+     int  num2  =   20;
+     int   sum  =   0;
+     int   a    =  100;
+     int   b    =200;
+     //sum  =  num1 + num2;
+    sum = Add (num1, num2);   //调用函数
+    //sum  =  a    +    b;
+     sum  =  Add ( a, b );
+    printf ( "sum  = %d\ n",  sum)
+
+     return  0;
+}
