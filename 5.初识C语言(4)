@@ -34,3 +34,16 @@ int main()
     
     return 0;
 }
+
+int main()
+{
+    //利用结构体类型--创建一个该类型的结构体变量
+    struct Book b1 = {"C语言程序设计", 55};
+    struct Book* pb = &b1;
+    //利用pb打印出我的书名和价格
+    printf("%s\n", pb -> name);
+    printf("%d\n", pb -> price);
+    
+    return 0;
+}
+
