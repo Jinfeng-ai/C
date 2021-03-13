@@ -240,7 +240,7 @@ int main()
 #include <stdio.h>
 int main()
 {
-    printf("%d\n", sizeof(char *));
+    printf("%d\n", sizeof(char *));//类型的大小，是一个指针变量的大小，4个字节；
     printf("%d\n", sizeof(short *));
     printf("%d\n", sizeof(int *));
     printf("%d\n", sizeof(double *));
