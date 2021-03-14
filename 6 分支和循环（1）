@@ -98,10 +98,19 @@ C语言中怎么表示真假的？0表示假，非0表示真。
 }
  
  
+ 这里的一对{}表示代码块。
  
- 
- 
- include<stdio.h>
- int sum(int a)
- {
-    int c = 0
+int main()
+{
+    int age = 10;
+    if(age < 18)
+    {
+        printf("未成年\n");
+        printf("不能谈恋爱\n");
+     }
+     else if(age >= 18 && age < 28)
+        printf ("青年\n");
+     else if(age >= 28 && age < 50)
+        printf ("壮年\n");
+     return 0;
+}
