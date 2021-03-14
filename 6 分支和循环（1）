@@ -131,9 +131,31 @@ int main()
 结论：else与最近未匹配的if相匹配。
 
 
+【if书写形式对比】
+//代码1
+if(condition){
+    return x;
+}
+return y;
 
+//代码2
+if(condition)
+{
+    return x;
+}
+else
+{
+    return y;
+}
 
-
+//代码3
+int main()
+{
+    int num = 4;
+    if(num = 5) //"="赋值；"=="是判断相等；
+    {
+        printf("hehe\n");
+    }
 
 
 
