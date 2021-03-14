@@ -160,9 +160,30 @@ int main()
 }
 
 
+eg:输出1-100之间的奇数；
+#include <stdio.h>
+int main()
+{
+    int i = 1;
+    while(i <= 100)
+    {
+        printf("%d ", i);
+        i +=2;
+     }
+     return 0;
+}
 
-
-
+int main()
+{
+    int i = 1;
+    while(i <= 100)
+    {
+        if(i%2 !=0)  //if(i%2 = 1 )
+            printf("%d ", i);
+        i ++;
+     }
+     return 0;
+}
 
 
 
