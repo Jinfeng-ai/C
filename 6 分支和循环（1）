@@ -258,7 +258,7 @@ int main()
 }
 
 
-【case后面不一定非要有break】
+【结论】case后面不一定非要有break
 #include <stdio.h>
 int main()
 {
@@ -333,21 +333,7 @@ int main()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+【每个switch语句中只能出现一条default子句；
+但是他可以出现在语句列表的任何位置，而且语句流会像贯穿一个case标签一样贯穿defa子句；
+在每个switch语句中都放一条default子句是个好习惯，甚至可以在后面加上break】
 
