@@ -306,7 +306,31 @@ int main()
     return 0;
 }
 
-
+int main()
+{
+    int day = 0;  //整形
+    scanf("%d", &day);
+    
+    switch(day)  //整形表达式
+    {
+    case 1:
+        if(n == 1)
+            printf("hehe\n");//case语句中可以有if语句；
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        printf("工作日\n");
+        break;
+    case 6:
+    case 7:
+        printf("休息日\n");
+        break；   
+    default:
+        printf("输入错误\n");
+        break;
+    return 0;
+}
 
 
 
