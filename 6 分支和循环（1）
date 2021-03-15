@@ -337,3 +337,51 @@ int main()
 但是他可以出现在语句列表的任何位置，而且语句流会像贯穿一个case标签一样贯穿default子句；
 在每个switch语句中都放一条default子句是个好习惯，甚至可以在后面加上break】
 
+
+
+int main()
+{
+    int n = 1;
+    int m = 2;
+    switch (n)
+    {
+        case 1: m++;
+        case 2: n++;
+        case 3: 
+            switch (n)
+            {//switch允许嵌套使用
+            case 1: n++;
+            case 2: m++;n++;
+            break;
+            }
+        case 4:m++;
+            break;
+        default:
+            break;
+        }
+        printf("m = %d, n = %d\n", m, n);
+        return 0;
+}                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
