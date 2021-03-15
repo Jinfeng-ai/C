@@ -363,13 +363,64 @@ int main()
         return 0;
 }                
 
+【循环语句】
+
+while循环
+
+//语法结构
+while(表达式)
+    循环语句;
+    
+#include <stdio.h>
+int main()
+{
+    int i = 1;
+    
+    while(i <= 10)
+    {
+        printf("%d", i);
+        i++;
+    }
+    return 0;
+}
 
 
+#include <stdio.h>
+int main()
+{
+    int i = 1;
+    
+    while(i <= 10)
+    {
+        if(i == 5)
+            break;
+        printf("%d", i);
+        i++;
+    }
+    return 0;
+}
+【总结】
+break在while循环中的作用：
+其实在循环中只要遇到break，就停止后期的所有的循环，直接终止循环。
+所以：while中的break是用于永久终止循环的。
 
-
-
-
-
+#include <stdio.h>
+int main()
+{
+    int i = 1;
+    
+    while(i <= 10)
+    {
+        if(i == 5)
+            continue;
+        printf("%d", i);
+        i++;
+    }
+    return 0;
+}
+【总结：continue在while循环中的作用：】
+continue是用于终止本次循环，也就是本次循环中continue后边的代码不会再执行，
+而是直接跳转到while语句的判断部分。进行下一次循环的入口判断。
 
 
 
